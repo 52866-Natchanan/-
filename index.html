@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>มหาเวสสันดร ตอน กัณฑ์มัทรี - สื่อการสอนภาษาไทย ม.5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Sarabun', sans-serif;
+        }
+        
+        .thai-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.1'%3E%3Cpath d='M30 30c0-16.569 13.431-30 30-30v60c-16.569 0-30-13.431-30-30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-amber-50 to-orange-100 min-h-screen scroll-smooth">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-amber-600 to-orange-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">มหาเวสสันดรชาดก</h1>
+                <h2 class="text-2xl md:text-3xl font-medium mb-4">ตอน กัณฑ์มัทรี</h2>
+                <p class="text-lg opacity-90">สื่อการสอนภาษาไทย ชั้นมัธยมศึกษาปีที่ 5</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center space-x-2 md:space-x-8 py-4">
+                <button onclick="scrollToSection('story')" class="px-4 py-2 text-amber-700 hover:bg-amber-100 rounded-lg transition-colors font-medium">เนื้อเรื่อง</button>
+                <button onclick="scrollToSection('author')" class="px-4 py-2 text-amber-700 hover:bg-amber-100 rounded-lg transition-colors font-medium">ผู้แต่ง</button>
+                <button onclick="scrollToSection('characters')" class="px-4 py-2 text-amber-700 hover:bg-amber-100 rounded-lg transition-colors font-medium">ตัวละคร</button>
+                <button onclick="scrollToSection('knowledge')" class="px-4 py-2 text-amber-700 hover:bg-amber-100 rounded-lg transition-colors font-medium">สาระน่ารู้</button>
+                <button onclick="scrollToSection('lesson')" class="px-4 py-2 text-amber-700 hover:bg-amber-100 rounded-lg transition-colors font-medium">ข้อคิด</button>
+                <button onclick="scrollToSection('quiz')" class="px-4 py-2 text-amber-700 hover:bg-amber-100 rounded-lg transition-colors font-medium">แบบทดสอบ</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-8">
+        <!-- Story Section -->
+        <section id="story" class="mb-16 fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8 thai-pattern">
+                <h3 class="text-3xl font-bold text-amber-800 mb-6 text-center">📖 เนื้อเรื่องกัณฑ์มัทรี</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-amber-100 to-orange-100 p-6 rounded-xl">
+                            <h4 class="text-xl font-semibold text-amber-800 mb-3">🦁 การขวางทางของเทวดา</h4>
+                            <p class="text-gray-700 leading-relaxed">หลังจากชูชกได้พาชาลีและกัณหาไปแล้ว พระอินทร์เห็นว่าหากพระนางมัทรีกลับมาแต่กลางวันจะไปขัดการให้ทานของพระเวสสันดร จึงให้เทวดา 3 องค์ แปลงกายเป็นเสือโคร่ง เสือเหลือง และราชสีห์ไปขวางทาง</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-blue-100 to-indigo-100 p-6 rounded-xl">
+                            <h4 class="text-xl font-semibold text-blue-800 mb-3">😢 ความเศร้าของพระนางมัทรี</h4>
+                            <p class="text-gray-700 leading-relaxed">เมื่อพระนางมัทรีกลับมาไม่พบพระกุมารทั้งสอง จึงไปถามพระเวสสันดร แต่พระองค์กลัวว่านางจะเสียใจจนถึงแก่ชีวิต จึงบ่ายเบี่ยงและทำทีหึงหวงที่นางกลับช้า</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-xl">
+                            <h4 class="text-xl font-semibold text-purple-800 mb-3">🌙 การตามหาตลอดคืน</h4>
+                            <p class="text-gray-700 leading-relaxed">พระนางมัทรีออกตามหาพระกุมารตลอดทั้งคืนจนถึงรุ่งเช้า ด้วยความอ่อนเพลียจึงสลบไป พระเวสสันดรมาเห็นก็ตกพระทัยคิดว่านางสิ้นใจ</p>
+                        </div>
+                        
+                        <div class="bg-gradient-to-r from-green-100 to-emerald-100 p-6 rounded-xl">
+                            <h4 class="text-xl font-semibold text-green-800 mb-3">💧 การฟื้นคืนสติ</h4>
+                            <p class="text-gray-700 leading-relaxed">พระเวสสันดรยกศีรษะของนางมาวางบนตักแล้วเอาน้ำรดที่หน้าผาก เมื่อพระนางฟื้นก็ถามถึงพระกุมาร พระเวสสันดรจึงบอกความจริงและขอให้ช่วยอนุโมทนาทาน</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Story Timeline -->
+                <div class="bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-xl">
+                    <h4 class="text-xl font-semibold text-amber-800 mb-4 text-center">⏰ ลำดับเหตุการณ์</h4>
+                    <div class="flex flex-wrap justify-center items-center space-x-4 text-center">
+                        <div class="bg-white p-4 rounded-lg shadow-md hover-scale mb-4">
+                            <div class="text-2xl mb-2">🦁</div>
+                            <p class="text-sm font-medium">เทวดาขวางทาง</p>
+                        </div>
+                        <div class="text-2xl text-amber-600">→</div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover-scale mb-4">
+                            <div class="text-2xl mb-2">🏠</div>
+                            <p class="text-sm font-medium">มัทรีกลับมา</p>
+                        </div>
+                        <div class="text-2xl text-amber-600">→</div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover-scale mb-4">
+                            <div class="text-2xl mb-2">😔</div>
+                            <p class="text-sm font-medium">เวสสันดรบ่ายเบี่ยง</p>
+                        </div>
+                        <div class="text-2xl text-amber-600">→</div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover-scale mb-4">
+                            <div class="text-2xl mb-2">🌙</div>
+                            <p class="text-sm font-medium">ตามหาทั้งคืน</p>
+                        </div>
+                        <div class="text-2xl text-amber-600">→</div>
+                        <div class="bg-white p-4 rounded-lg shadow-md hover-scale mb-4">
+                            <div class="text-2xl mb-2">💧</div>
+                            <p class="text-sm font-medium">ฟื้นและรู้ความจริง</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Author Section -->
+        <section id="author" class="mb-16 fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold text-amber-800 mb-6 text-center">✍️ ประวัติผู้แต่ง</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-amber-100 to-orange-100 p-6 rounded-xl">
+                        <div class="text-center mb-6">
+                            <img src="https://6232arunthipp.wordpress.com/wp-content/uploads/2017/11/15.gif" alt="เจ้าพระยาพระคลัง (หน)" class="w-48 h-64 object-cover rounded-lg shadow-lg mx-auto border-4 border-amber-200" onerror="this.src=''; this.alt='ไม่สามารถโหลดรูปภาพได้'; this.style.display='none';">
+                        </div>
+                        <h4 class="text-2xl font-semibold text-amber-800 mb-4 text-center">เจ้าพระยาพระคลัง (หน)</h4>
+                        <div class="space-y-3 text-gray-700">
+                            <p><strong>สมัย:</strong> สมเด็จพระเจ้าอยู่หัวบรมโกศ</p>
+                            <p><strong>ถึงแก่อสัญกรรม:</strong> พ.ศ. ๒๓๔๘</p>
+                            <p><strong>ลักษณะคำประพันธ์:</strong> ร่ายยาว</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-100 to-indigo-100 p-6 rounded-xl">
+                        <h4 class="text-xl font-semibold text-blue-800 mb-4">📚 ผลงานสำคัญ</h4>
+                        <div class="grid grid-cols-1 gap-2 text-gray-700">
+                            <div class="bg-white p-3 rounded-lg">• ราชาธิราช</div>
+                            <div class="bg-white p-3 rounded-lg">• สามก๊ก</div>
+                            <div class="bg-white p-3 rounded-lg">• ร่ายยาวมหาเวสสันดรชาดก</div>
+                            <div class="bg-white p-3 rounded-lg">• กัณฑ์กุมารและกัณฑ์มัทรี</div>
+                            <div class="bg-white p-3 rounded-lg">• บทมโหรีเรื่องกากี</div>
+                            <div class="bg-white p-3 rounded-lg">• ลิลิตเพชรมงกุฎ</div>
+                            <div class="bg-white p-3 rounded-lg">• อิเหนาคำฉันท์</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Characters Section -->
+        <section id="characters" class="mb-16 fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold text-amber-800 mb-6 text-center">👥 ตัวละครสำคัญ</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-yellow-100 to-amber-100 p-6 rounded-xl hover-scale">
+                        <div class="text-center mb-4">
+                            <div class="text-6xl mb-2">👑</div>
+                            <h4 class="text-2xl font-semibold text-amber-800">พระเวสสันดร</h4>
+                        </div>
+                        <div class="space-y-3 text-gray-700">
+                            <p><strong>ลักษณะนิสัย:</strong></p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>ใฝ่ในการให้ทาน</li>
+                                <li>เข้าใจธรรมชาติของมนุษย์</li>
+                                <li>ใช้คำบริภาษเพื่อแทนที่อารมณ์โศกเศร้า</li>
+                                <li>มีพระปัญญาในการจัดการอารมณ์</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-pink-100 to-rose-100 p-6 rounded-xl hover-scale">
+                        <div class="text-center mb-4">
+                            <div class="text-6xl mb-2">👸</div>
+                            <h4 class="text-2xl font-semibold text-pink-800">พระนางมัทรี</h4>
+                        </div>
+                        <div class="space-y-3 text-gray-700">
+                            <p><strong>ลักษณะนิสัย:</strong></p>
+                            <ul class="list-disc list-inside space-y-1 ml-4">
+                                <li>รักสามีและลูกมาก</li>
+                                <li>มีจิตใจใฝ่ในทาน</li>
+                                <li>อดทนและเสียสละ</li>
+                                <li>ร่วมอนุโมทนาบุญกับพระสวามี</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Knowledge Section -->
+        <section id="knowledge" class="mb-16 fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold text-amber-800 mb-6 text-center">🎭 สาระน่ารู้: พิธีเทศน์มหาชาติ</h3>
+                
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 rounded-xl">
+                        <h4 class="text-xl font-semibold text-purple-800 mb-4">🕐 ช่วงเวลาจัดงาน</h4>
+                        <p class="text-gray-700 leading-relaxed">พิธีเทศน์มหาชาติมักกระทำกันในช่วงออกพรรษาเมื่อพ้นงานกฐินไปแล้ว โดยจะเริ่มตั้งแต่เช้าตรู่</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-green-100 to-emerald-100 p-6 rounded-xl">
+                        <h4 class="text-xl font-semibold text-green-800 mb-4">🎪 การเตรียมงาน</h4>
+                        <p class="text-gray-700 leading-relaxed">ช่วงก่อนงานจะมีฎีกาแจกบอกบุญให้รับเป็นเจ้าของกัณฑ์ ผู้ที่เป็นเจ้าของกัณฑ์จะต้องจัดเครื่องกัณฑ์ที่บ้านและขนไปที่วัดในวันงาน</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-r from-amber-100 to-yellow-100 p-6 rounded-xl">
+                        <h4 class="text-xl font-semibold text-amber-800 mb-4">🙏 ผลบุญที่ได้รับ</h4>
+                        <p class="text-gray-700 leading-relaxed">ตามมาลัยสูตร ผู้ที่ได้ฟังเทศน์มหาชาติครบ ๑๓ กัณฑ์ในวันเดียว และบูชาด้วยดอกไม้ ธูป เทียน และธงอย่างละพัน ถือว่าได้บุญแรง และชาติหน้าจะได้พบกับพระศรีอาริย์</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lesson Section -->
+        <section id="lesson" class="mb-16 fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold text-amber-800 mb-6 text-center">💡 ข้อคิด คติคำสอน และความจรรโลงใจ</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-gradient-to-br from-red-100 to-pink-100 p-6 rounded-xl hover-scale">
+                        <div class="text-center mb-4">
+                            <div class="text-4xl mb-2">❤️</div>
+                            <h4 class="text-lg font-semibold text-red-800">ความรักของแม่</h4>
+                        </div>
+                        <p class="text-gray-700 text-center">ความรักของแม่เป็นความรักที่ยิ่งใหญ่ ซึ่งเป็นสิ่งเตือนใจให้ผู้เป็นลูกตระหนักและมีความกตัญญู</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-100 to-cyan-100 p-6 rounded-xl hover-scale">
+                        <div class="text-center mb-4">
+                            <div class="text-4xl mb-2">🕊️</div>
+                            <h4 class="text-lg font-semibold text-blue-800">การให้และการยอมรับ</h4>
+                        </div>
+                        <p class="text-gray-700 text-center">การให้และการยอมรับสิ่งที่เกิดขึ้น จะทำให้จิตใจสบายไม่เป็นทุกข์</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-green-100 to-emerald-100 p-6 rounded-xl hover-scale">
+                        <div class="text-center mb-4">
+                            <div class="text-4xl mb-2">🌟</div>
+                            <h4 class="text-lg font-semibold text-green-800">การเสียสละ</h4>
+                        </div>
+                        <p class="text-gray-700 text-center">การเสียสละประโยชน์สุขแห่งตนเพื่อประโยชน์สุขของคนส่วนรวม ถือเป็นเรื่องที่น่าสรรเสริญ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="mb-16 fade-in">
+            <div class="bg-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold text-amber-800 mb-6 text-center">📝 แบบทดสอบความเข้าใจ</h3>
+                
+                <div id="quiz-container" class="space-y-6">
+                    <div class="quiz-question bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-blue-800 mb-4">คำถามที่ 1: เทวดากี่องค์ที่พระอินทร์ให้ไปขวางทางพระนางมัทรี?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-blue-100 p-2 rounded">
+                                <input type="radio" name="q1" value="a" class="text-blue-600">
+                                <span>ก. 2 องค์</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-blue-100 p-2 rounded">
+                                <input type="radio" name="q1" value="b" class="text-blue-600">
+                                <span>ข. 3 องค์</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-blue-100 p-2 rounded">
+                                <input type="radio" name="q1" value="c" class="text-blue-600">
+                                <span>ค. 4 องค์</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-blue-100 p-2 rounded">
+                                <input type="radio" name="q1" value="d" class="text-blue-600">
+                                <span>ง. 5 องค์</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-green-800 mb-4">คำถามที่ 2: ผู้แต่งกัณฑ์มัทรีคือใคร?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-green-100 p-2 rounded">
+                                <input type="radio" name="q2" value="a" class="text-green-600">
+                                <span>ก. เจ้าพระยาพระคลัง (หน)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-green-100 p-2 rounded">
+                                <input type="radio" name="q2" value="b" class="text-green-600">
+                                <span>ข. สุนทรภู่</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-green-100 p-2 rounded">
+                                <input type="radio" name="q2" value="c" class="text-green-600">
+                                <span>ค. ศรีประภา</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-green-100 p-2 rounded">
+                                <input type="radio" name="q2" value="d" class="text-green-600">
+                                <span>ง. พระมหาสามณเจ้า</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-purple-800 mb-4">คำถามที่ 3: พระเวสสันดรทำอย่างไรเมื่อพระนางมัทรีถามถึงพระกุมาร?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-purple-100 p-2 rounded">
+                                <input type="radio" name="q3" value="a" class="text-purple-600">
+                                <span>ก. บอกความจริงทันที</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-purple-100 p-2 rounded">
+                                <input type="radio" name="q3" value="b" class="text-purple-600">
+                                <span>ข. บ่ายเบี่ยงและทำทีหึงหวง</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-purple-100 p-2 rounded">
+                                <input type="radio" name="q3" value="c" class="text-purple-600">
+                                <span>ค. หนีไปซ่อนตัว</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-purple-100 p-2 rounded">
+                                <input type="radio" name="q3" value="d" class="text-purple-600">
+                                <span>ง. ร้องไห้</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-orange-800 mb-4">คำถามที่ 4: เทวดาแปลงกายเป็นสัตว์อะไรบ้างเพื่อขวางทางพระนางมัทรี?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-orange-100 p-2 rounded">
+                                <input type="radio" name="q4" value="a" class="text-orange-600">
+                                <span>ก. เสือโคร่ง เสือเหลือง และช้าง</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-orange-100 p-2 rounded">
+                                <input type="radio" name="q4" value="b" class="text-orange-600">
+                                <span>ข. เสือโคร่ง เสือเหลือง และราชสีห์</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-orange-100 p-2 rounded">
+                                <input type="radio" name="q4" value="c" class="text-orange-600">
+                                <span>ค. ราชสีห์ เสือดาว และหมี</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-orange-100 p-2 rounded">
+                                <input type="radio" name="q4" value="d" class="text-orange-600">
+                                <span>ง. เสือโคร่ง หมี และช้าง</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question bg-gradient-to-r from-teal-50 to-cyan-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-teal-800 mb-4">คำถามที่ 5: พระนางมัทรีสลบไปเพราะอะไร?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-teal-100 p-2 rounded">
+                                <input type="radio" name="q5" value="a" class="text-teal-600">
+                                <span>ก. ถูกเทวดาทำร้าย</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-teal-100 p-2 rounded">
+                                <input type="radio" name="q5" value="b" class="text-teal-600">
+                                <span>ข. ตกใจเมื่อเห็นสัตว์ป่า</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-teal-100 p-2 rounded">
+                                <input type="radio" name="q5" value="c" class="text-teal-600">
+                                <span>ค. อ่อนเพลียจากการตามหาลูกตลอดคืน</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-teal-100 p-2 rounded">
+                                <input type="radio" name="q5" value="d" class="text-teal-600">
+                                <span>ง. เศร้าใจเมื่อรู้ความจริง</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question bg-gradient-to-r from-rose-50 to-pink-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-rose-800 mb-4">คำถามที่ 6: ข้อใดแสดงให้เห็นถึงความรักของพระนางมัทรีที่มีต่อลูก?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-rose-100 p-2 rounded">
+                                <input type="radio" name="q6" value="a" class="text-rose-600">
+                                <span>ก. ออกตามหาลูกตลอดทั้งคืน</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-rose-100 p-2 rounded">
+                                <input type="radio" name="q6" value="b" class="text-rose-600">
+                                <span>ข. โกรธพระเวสสันดรที่ให้ลูกไป</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-rose-100 p-2 rounded">
+                                <input type="radio" name="q6" value="c" class="text-rose-600">
+                                <span>ค. ไม่ยอมอนุโมทนาทาน</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-rose-100 p-2 rounded">
+                                <input type="radio" name="q6" value="d" class="text-rose-600">
+                                <span>ง. ตำหนิพระเวสสันดร</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-xl">
+                        <h4 class="text-lg font-semibold text-indigo-800 mb-4">คำถามที่ 7: ลักษณะคำประพันธ์ของกัณฑ์มัทรีคืออะไร?</h4>
+                        <div class="space-y-2">
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-indigo-100 p-2 rounded">
+                                <input type="radio" name="q7" value="a" class="text-indigo-600">
+                                <span>ก. ร่ายยาว</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-indigo-100 p-2 rounded">
+                                <input type="radio" name="q7" value="b" class="text-indigo-600">
+                                <span>ข. กลอนสุภาพ</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-indigo-100 p-2 rounded">
+                                <input type="radio" name="q7" value="c" class="text-indigo-600">
+                                <span>ค. ฉันท์</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer hover:bg-indigo-100 p-2 rounded">
+                                <input type="radio" name="q7" value="d" class="text-indigo-600">
+                                <span>ง. กาพย์</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-8">
+                    <button onclick="checkAnswers()" class="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-orange-600 transition-all transform hover:scale-105 shadow-lg">
+                        ตรวจคำตอบ
+                    </button>
+                </div>
+
+                <div id="quiz-result" class="mt-6 p-6 rounded-xl hidden"></div>
+            </div>
+        </section>
+
+        <!-- Keywords Section -->
+        <section class="mb-16 fade-in">
+            <div class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-2xl shadow-xl p-8">
+                <h3 class="text-3xl font-bold mb-6 text-center">🔑 คำสำคัญ</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-white bg-opacity-10 px-4 py-2 rounded-full font-medium">มหาเวสสันดร</span>
+                    <span class="bg-white bg-opacity-10 px-4 py-2 rounded-full font-medium">พระนางมัทรี</span>
+                    <span class="bg-white bg-opacity-10 px-4 py-2 rounded-full font-medium">เจ้าพระยาพระคลัง (หน)</span>
+                    <span class="bg-white bg-opacity-10 px-4 py-2 rounded-full font-medium">ร่ายยาว</span>
+                    <span class="bg-white bg-opacity-10 px-4 py-2 rounded-full font-medium">เทศน์มหาชาติ</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-medium mb-2">สื่อการสอนภาษาไทย ชั้นมัธยมศึกษาปีที่ 5</p>
+            <p class="text-gray-400">มหาเวสสันดรชาดก ตอน กัณฑ์มัทรี</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Quiz functionality
+        function checkAnswers() {
+            const answers = {
+                q1: 'b', // 3 องค์
+                q2: 'a', // เจ้าพระยาพระคลัง (หน)
+                q3: 'b', // บ่ายเบี่ยงและทำทีหึงหวง
+                q4: 'b', // เสือโคร่ง เสือเหลือง และราชสีห์
+                q5: 'c', // อ่อนเพลียจากการตามหาลูกตลอดคืน
+                q6: 'a', // ออกตามหาลูกตลอดทั้งคืน
+                q7: 'a'  // ร่ายยาว
+            };
+
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length;
+            let results = [];
+
+            for (let question in answers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer) {
+                    if (selectedAnswer.value === answers[question]) {
+                        score++;
+                        results.push(`คำถามที่ ${question.slice(1)}: ✅ ถูกต้อง`);
+                    } else {
+                        results.push(`คำถามที่ ${question.slice(1)}: ❌ ผิด`);
+                    }
+                } else {
+                    results.push(`คำถามที่ ${question.slice(1)}: ⚠️ ไม่ได้เลือกคำตอบ`);
+                }
+            }
+
+            const percentage = Math.round((score / totalQuestions) * 100);
+            const resultDiv = document.getElementById('quiz-result');
+            
+            let resultClass = '';
+            let resultMessage = '';
+            
+            if (percentage >= 80) {
+                resultClass = 'bg-green-100 border-green-500 text-green-800';
+                resultMessage = '🎉 ยอดเยี่ยม! คุณเข้าใจเนื้อหาเป็นอย่างดี';
+            } else if (percentage >= 60) {
+                resultClass = 'bg-yellow-100 border-yellow-500 text-yellow-800';
+                resultMessage = '👍 ดีมาก! แต่ควรทบทวนเนื้อหาเพิ่มเติม';
+            } else {
+                resultClass = 'bg-red-100 border-red-500 text-red-800';
+                resultMessage = '📚 ควรศึกษาเนื้อหาเพิ่มเติมและลองทำแบบทดสอบใหม่';
+            }
+
+            resultDiv.className = `mt-6 p-6 rounded-xl border-2 ${resultClass}`;
+            resultDiv.innerHTML = `
+                <h4 class="text-xl font-bold mb-4">${resultMessage}</h4>
+                <p class="text-lg mb-4">คะแนนของคุณ: ${score}/${totalQuestions} (${percentage}%)</p>
+                <div class="space-y-2">
+                    ${results.map(result => `<p>${result}</p>`).join('')}
+                </div>
+            `;
+            resultDiv.classList.remove('hidden');
+            
+            // Scroll to result
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96736ef8d29b7335',t:'MTc1Mzg2MzU5Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
